@@ -1,9 +1,8 @@
 ;-------------------------printf for kernel-----------------------
 ; Designed for 16-bit real-mode
 ; Take a quick read
-; A bit overwhelming due to shortage of GPR, hence 
-; use of stack.
-;
+; A bit overwhelming due to shortage of GPR, hence stack's utilised
+
 
 printk:
     push bp
