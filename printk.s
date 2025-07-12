@@ -1,9 +1,16 @@
-;-------------------------printf for kernel-----------------------
+; by cs-NPC 
+
 ; Designed for 16-bit real-mode
-; Take a quick read
-; A bit overwhelming due to shortage of GPR, hence stack's utilised
+; Take a quick read,
+; Heavily relies on stack due to shortage of GPR.
+; Follows CDECL calling convention.
+; push arguments in reverse order against the format string args order.
+; a set_display function already added and can be called for clear screen [optional]
+
+; Good luck.
 
 
+;-------------------------printf for kernel-----------------------
 printk:
     push bp
     mov bp,sp
