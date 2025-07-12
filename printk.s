@@ -9,6 +9,7 @@
 
 ; Good luck.
 
+[bits 16]
 
 ;-------------------------printf for kernel-----------------------
 printk:
